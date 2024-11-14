@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(45deg, #8b4513, #d2691e);
+        font-family: "Arial", sans-serif;
+        color: white;
+        text-align: center;
+      }
+
+      .container {
+        padding: 15px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        animation: fadeIn 2s ease-in;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin: 10px 0;
+        padding: 0 10px;
+      }
+
+      .raccoon {
+        font-size: 60px;
+        margin: 15px;
+        animation: bounce 2s ease-in-out infinite;
+      }
+
+      .heart {
+        font-size: 40px;
+        animation: pulse 1.5s ease-in-out infinite;
+        margin: 5px;
+        display: inline-block;
+      }
+
+      .message {
+        margin: 20px auto;
+        font-size: 18px;
+        width: 90%;
+        line-height: 1.6;
+        background: rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        border-radius: 15px;
+      }
+
+      .names {
+        font-size: 22px;
+        margin: 15px 0;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        padding: 0 10px;
+      }
+
+      .timeline {
+        margin: 20px auto;
+        padding: 15px;
+        width: 90%;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        animation: slideIn 1s ease-out;
+      }
+
+      .timeline h3 {
+        font-size: 20px;
+        margin: 10px 0;
+      }
+
+      .timeline p {
+        font-size: 16px;
+        margin: 8px 0;
+      }
+
+      .memories {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+      }
+
+      .memories h3 {
+        font-size: 20px;
+        margin: 10px 0;
+      }
+
+      .memories p {
+        font-size: 16px;
+        margin: 8px 0;
+      }
+
+      .footer {
+        margin: 20px 0;
+        font-style: italic;
+        opacity: 0.8;
+        font-size: 16px;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(30px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      /* Mejoras para pantallas muy pequeñas */
+      @media (max-width: 320px) {
+        h1 {
+          font-size: 20px;
+        }
+        .message {
+          font-size: 16px;
+        }
+        .names {
+          font-size: 18px;
+        }
+        .raccoon {
+          font-size: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="raccoon">🦝</div>
+      <h1>¡Feliz 1 Año y 3 Meses, Mi Mapache!</h1>
+
+      <div class="names">
+        Nathalia Murillo <span class="heart">❤️</span> Roswil Plua
+      </div>
+
+      <div class="message">
+        Mi mapache hermosa:<br /><br />
+        Han sido 15 meses maravillosos a tu lado, cada momento contigo ha sido
+        especial y único. Desde que llegaste a mi vida, todo tiene más sentido y
+        más alegría. Eres mi compañera perfecta.
+      </div>
+
+      <div class="timeline">
+        <h3>Nuestro Amor en Números:</h3>
+        <p>🦝 15 meses siendo mapaches enamorados</p>
+        <p>✨ 455 días de aventuras juntos</p>
+        <p>💑 Miles de momentos especiales</p>
+        <p>💖 Un amor que crece cada día más</p>
+        <p>😻 14/08/2023 donde comenzo todo</p>
+      </div>
+
+      <div class="memories">
+        <h3>Lo Que Más Amo de Ti:</h3>
+        <p>Tu ojitos hermosos que ilumina mis días</p>
+        <p>Tu forma de ser tan especial</p>
+        <p>Cómo me haces sentir cuando estoy contigo</p>
+        <p>Todos nuestros momentos juntos como mapaches</p>
+      </div>
+
+      <div class="footer">
+        Con todo mi amor, tu mapache,<br />
+        Roswil<br />
+        <script>
+          document.write(new Date().toLocaleDateString());
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
